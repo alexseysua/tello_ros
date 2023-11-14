@@ -11,7 +11,7 @@ from cv_bridge import CvBridge, CvBridgeError  # Package to convert between ROS 
 import cv2
 import cv2.aruco as aruco
 
-from Pid import PID
+from .Pid import PID
 
 
 class ActionManager(Node):
@@ -144,7 +144,3 @@ def main(args=None):
             break
 
     rclpy.shutdown()
-
-
-if __name__ == '__main__':
-    main()
