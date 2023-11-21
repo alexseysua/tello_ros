@@ -21,7 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
             "aruco_mission_1.py = tello_controller.aruco_mission_1:main",
-            "aruco_mission_2.py = tello_controller.aruco_mission_2:main"
+            "aruco_mission_2.py = tello_controller.aruco_mission_2:main",
+            "aruco_lab_1.py = tello_controller.aruco_lab_1:main",
         ],
     },
 )
