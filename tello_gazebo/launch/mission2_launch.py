@@ -18,7 +18,7 @@ def generate_launch_description():
             os.path.join(gazebo_ros_pkg, "launch", "gazebo.launch.py")
         )
     )
-    os.environ["GAZEBO_MODEL_PATH"] = os.path.join(simu_pkg, "models")
+    os.environ["GAZEBO_MODEL_PATH"] += os.path.join(simu_pkg, "models")
 
     return LaunchDescription([
         DeclareLaunchArgument(
